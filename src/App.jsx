@@ -1,12 +1,12 @@
-import './App.css'
+import StopWatch from "./StopWatch";
+import React, {useState, useEffect, useRef} from "react";
 
-function App() {
-
-  return (
-    <>
-
-    </>
-  )
+function App(){
+    return(
+        <>
+            <StopWatch />
+        </>
+    );
 }
 
 export default App

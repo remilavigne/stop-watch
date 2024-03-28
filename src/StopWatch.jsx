@@ -11,7 +11,7 @@ function StopWatch(){
     useEffect(() => {
         if(isRunning){
             intervalIDRef.current = setInterval(() => {
-                elapseTime(Date.now() - startTimeRef.current)
+                setElapseTime(Date.now() - startTimeRef.current)
             }, 10);
         }
 
@@ -19,7 +19,7 @@ function StopWatch(){
             clearInterval(intervalIDRef.current);
         }
 
-    }, [isRunning, elapseTime]);
+    }, [isRunning]);
 
     function start(){
         setIsRunning(true);

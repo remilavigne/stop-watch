@@ -1,0 +1,53 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+.stop-watch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 50px;
+  background-color: white;
+  padding: 30px;
+}
+.display{
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 25px;
+}
+.controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.start-btn{
+  background-color: green;
+}
+.start-btn:hover{
+  background-color: lightgreen;
+}
+.stop-btn{
+  background-color: red;
+}
+.stop-btn:hover{
+  background-color: lightcoral;
+}
+.reset-btn{
+  background-color: blue;
+}
+.reset-btn:hover{
+  background-color: lightcyan;
+}
